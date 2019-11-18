@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Pack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pack>
+    <Name1>wiosna</Name1>
+    <Name2>spring</Name2>
+  </Pack>
+  <Pack>
+    <Name1>lato</Name1>
+    <Name2>summer</Name2>
+  </Pack>
+  <Pack>
+    <Name1>jesień</Name1>
+    <Name2>autumn</Name2>
+  </Pack>
+  <Pack>
+    <Name1>zima</Name1>
+    <Name2>winter</Name2>
+  </Pack>
+</Pack>

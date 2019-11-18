@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Pack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pack>
+    <Name1>poniedziałek</Name1>
+    <Name2>monday</Name2>
+  </Pack>
+  <Pack>
+    <Name1>wtorek</Name1>
+    <Name2>tuesday</Name2>
+  </Pack>
+  <Pack>
+    <Name1>środa</Name1>
+    <Name2>wednesday</Name2>
+  </Pack>
+  <Pack>
+    <Name1>czwartek</Name1>
+    <Name2>thursday</Name2>
+  </Pack>
+  <Pack>
+    <Name1>piątek</Name1>
+    <Name2>friday</Name2>
+  </Pack>
+  <Pack>
+    <Name1>sobota</Name1>
+    <Name2>saturday</Name2>
+  </Pack>
+  <Pack>
+    <Name1>niedziela</Name1>
+    <Name2>sunday</Name2>
+  </Pack>
+</Pack>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Pack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pack>
+    <Name1>ja</Name1>
+    <Name2>I</Name2>
+  </Pack>
+  <Pack>
+    <Name1>ty</Name1>
+    <Name2>you</Name2>
+  </Pack>
+  <Pack>
+    <Name1>on</Name1>
+    <Name2>he</Name2>
+  </Pack>
+  <Pack>
+    <Name1>ona</Name1>
+    <Name2>she</Name2>
+  </Pack>
+  <Pack>
+    <Name1>ono</Name1>
+    <Name2>it</Name2>
+  </Pack>
+  <Pack>
+    <Name1>my</Name1>
+    <Name2>we</Name2>
+  </Pack>
+  <Pack>
+    <Name1>wy</Name1>
+    <Name2>you</Name2>
+  </Pack>
+  <Pack>
+    <Name1>oni</Name1>
+    <Name2>they</Name2>
+  </Pack>
+</Pack>

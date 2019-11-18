@@ -1,0 +1,20 @@
+﻿<Window x:Class="braintionary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:braintionary"
+        mc:Ignorable="d"
+        Title="Braintionary"
+        WindowStartupLocation="CenterScreen" 
+        Width="270"
+        Height="290">
+    <StackPanel Margin="5">
+        <Label Content="Wersja: 0.2a" TextElement.FontSize="10" HorizontalContentAlignment="Right" Padding="0" Margin="-5"/>
+        <Button x:Name="bAdd" Content="Utwórz listę słówek" Margin="5" Click="bAdd_Click"/>
+        <Button x:Name="bDel" Content="Usuń listę słówek" Margin="5" Click="bDel_Click"/>
+        <ListView x:Name="lvTasks" MinHeight="100" Margin="5" SelectionChanged="lvTasks_SelectionChanged"/>
+        <Button x:Name="bStart" Content="Nauka" Margin="5" Click="bStart_Click"/>
+        <CheckBox x:Name="cbRandomize" Content="Pytaj o wyrazy losowo" IsChecked="True" Margin="5"/>
+    </StackPanel>
+</Window>

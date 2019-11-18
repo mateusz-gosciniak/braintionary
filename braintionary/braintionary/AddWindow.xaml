@@ -1,0 +1,52 @@
+﻿<Window x:Class="braintionary.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:braintionary"
+        mc:Ignorable="d"
+        Title="Tworzenie listy słówek" 
+        WindowStartupLocation="CenterScreen"
+        Width="500"
+        Height="300">
+    
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Nazwa listy słówek:" Margin="5"/>
+        <TextBox x:Name="tbTitleName" Grid.Row="0" Grid.Column="1" MinWidth="100" Margin="5" KeyDown="tbTitleName_KeyDown"/>
+        
+        <Label Grid.Row="1" Grid.Column="0" Content="Słówko:" Margin="5"/>
+        <TextBox x:Name="tbOriginal" Grid.Row="1" Grid.Column="1" MinWidth="100" Margin="5" KeyDown="tbOriginal_KeyDown"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Odpowiednik:" Margin="5"/>
+        <TextBox x:Name="tbNew" Grid.Row="2" Grid.Column="1" MinWidth="100" Margin="5" KeyDown="tbNew_KeyDown"/>
+
+        <Button x:Name="bAdd" Grid.Row="3" Grid.ColumnSpan="2" Content="Dodaj następne" Margin="5" Click="bAdd_Click"/>
+        <CheckBox x:Name="cbTurnOffMessageBox" Grid.Row="4" Grid.ColumnSpan="2" Content="Wyłącz powiadomienia o dodanym słówku" IsChecked="True" Margin="5" />
+        <Button x:Name="bSave" Grid.Row="5" Grid.ColumnSpan="2" Content="Zapisz" Margin="5" Click="bSave_Click"/>
+        <Button x:Name="bEnd" Grid.Row="6" Grid.ColumnSpan="2" Content="Zakończ" Margin="5" Click="bEnd_Click"/>
+
+        <ListView x:Name="lvWords" Grid.RowSpan="8" Grid.Column="3" SizeChanged="lvWords_SizeChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Słówko" Width="auto" DisplayMemberBinding="{Binding name1}"/>
+                    <GridViewColumn Header="Odpowiednik" Width="auto" DisplayMemberBinding="{Binding name2}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
